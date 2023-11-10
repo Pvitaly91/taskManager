@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->smallInteger('status')->unsigned()->default(0);
-            $table->string('name');
-            $table->text('description');
-            $table->dateTime('end_date')->nullable();
+            $table->smallInteger('status')->unsigned()->default(0)->comment("позначка про завершення");
+            $table->string('name')->comment("назва завдання");
+            $table->text('description')->comment("опис");
+            $table->dateTime('end_date')->nullable()->comment("дата завершення");
             $table->timestamps();
 
         });
