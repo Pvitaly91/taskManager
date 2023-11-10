@@ -10,7 +10,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Testing\Fluent\AssertableJson;
 
-class ExampleTest extends TestCase
+class MainTest extends TestCase
 {
    /**
     * Get user already exist or create if not exist
